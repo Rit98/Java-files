@@ -1,18 +1,18 @@
-/*Initialize a object by using methods */
+/*Initialize a object by a refernce variable*/ 
+
+
 
 class practice{
     String color;
-    int age;   
-    void init(String c , int a){
-        color = c;
-        age = a;
-    }
-    void display(){
-        System.out.println(color+" "+age);
-    }
+    int age;
+        
     public static void main(String[] args) {
         practice buzo = new practice();
-        buzo.init("black", 10);
-        buzo.display();
+        buzo.color = "black";
+        buzo.age = 10;
+        System.out.println(buzo.color+" "+buzo.age);
+
+
     }
-} 
+}
+
